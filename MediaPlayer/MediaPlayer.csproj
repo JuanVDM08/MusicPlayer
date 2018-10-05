@@ -95,10 +95,37 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Configuration.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\SoundFile.cs" />
+    <Compile Include="Models\SoundFileManager.cs" />
+    <Compile Include="PlaybackControl.xaml.cs">
+      <DependentUpon>PlaybackControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenario1_Create.xaml.cs">
+      <DependentUpon>Scenario1_Create.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario2_Display.xaml.cs">
+      <DependentUpon>Scenario2_Display.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3_Add.xaml.cs">
+      <DependentUpon>Scenario3_Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4_Remove.xaml.cs">
+      <DependentUpon>Scenario4_Remove.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario5_Clear.xaml.cs">
+      <DependentUpon>Scenario5_Clear.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6_PlayBack.xaml.cs">
+      <DependentUpon>Scenario6_PlayBack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario7_Print.xaml.cs">
+      <DependentUpon>Scenario7_Print.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -125,11 +152,52 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PlaybackControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario1_Create.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario2_Display.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario3_Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario4_Remove.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario5_Clear.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario6_PlayBack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario7_Print.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.7</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="WindowsDesktop, Version=10.0.17134.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
